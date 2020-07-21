@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bacgrdbluback"
+    tools:context=".prfacc.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lgnmailbox"
+        android:transitionName="login_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/Black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lgnmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lgnpasswordbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/Black"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lgnpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lgnforgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="forget password"
+        android:textSize="15dp"
+        android:transitionName="login_forgetpassword"
+        android:textColor="#ff004d40"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/lgnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/login"
+        android:elevation="25dp"
+        android:text="Log in"
+        android:textColor="@color/Wheat"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/lgnnewuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="login_newuser"
+        android:layout_gravity="center"
+        android:text="NewUser?Sign in"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

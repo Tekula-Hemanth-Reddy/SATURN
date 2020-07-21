@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bacgrdreg"
+
+    tools:context=".prfacc.Registration">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/regwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:transitionName="login_newuser"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/aladin"
+        android:text="Welcome..!"
+        android:textColor="@color/White"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/regsaturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="to SATURN"
+        android:textColor="@color/White"
+        android:textSize="40sp"
+        android:layout_marginLeft="40dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regnamebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/Black"
+
+        app:passwordToggleTint="@color/Black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/Black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regmailbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/Black"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/phonespinnereditdetails"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:scrollbarSize="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regphonenumberbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/Black"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textColor="@color/Black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regpasswordbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/Black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regconpasswordbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/Black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regconpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:hint="Confirm-Password"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/regalreadyauser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Already a User"
+        android:textSize="15dp"
+        android:textColor="#ff004d40"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/regsignin"
+        android:layout_width="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login"
+        android:text="Sign in"
+        android:textColor="@color/Wheat"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/appsinfo">
+    <TextView
+        android:id="@+id/tasknameinclude"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="tasks"
+        android:textSize="25dp"
+        android:textColor="@color/CadetBlue"
+        android:fontFamily="@font/aladin"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="By"
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/aladin"/>
+        <TextView
+            android:id="@+id/tasktimeinclude"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="tasks"
+            android:textColor="@color/CadetBlue"
+            android:textSize="25dp"
+            android:fontFamily="@font/aladin"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="% done"
+            android:textColor="@color/Black"
+            android:textSize="25dp"
+            android:fontFamily="@font/aladin"/>
+        <TextView
+            android:id="@+id/percentaskinclude"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="tasks"
+            android:textColor="@color/CadetBlue"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/aladin"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

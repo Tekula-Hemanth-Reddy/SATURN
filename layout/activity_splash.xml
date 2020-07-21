@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".prfacc.MainActivity"
+    android:background="@drawable/splashbold">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/splash_img"-->
+<!--        android:layout_width="343dp"-->
+<!--        android:layout_height="325dp"-->
+<!--        android:layout_marginStart="35sp"-->
+<!--        android:layout_marginTop="100sp"-->
+<!--        android:layout_marginEnd="20sp"-->
+<!--        android:layout_marginBottom="20sp"-->
+<!--        android:src="@drawable/logobackgrdnill"-->
+<!--        android:transitionName="logo_image" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/splash_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/splash_img"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:fontFamily="@font/aladin"-->
+<!--        android:text="SATURN"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/Wheat"-->
+<!--        android:textSize="50sp"-->
+
+<!--        android:transitionName="logo_text" />-->
+
+
+</LinearLayout>

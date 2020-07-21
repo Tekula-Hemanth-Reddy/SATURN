@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backonlylogo"
+    tools:context=".prfacc.PassReset">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/premailresetbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/Black"
+        android:transitionName="login_mail"
+        app:passwordToggleTint="@color/Black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/premailreset"
+            android:hint="Email"
+            android:textColor="@color/Black" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/prresetbt"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"
+        android:background="@drawable/login"
+        android:textColor="@color/Wheat"
+        android:transitionName="login_forgetpassword"
+        android:text="Reset password" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="end"
+        android:text="Cancel"
+        android:fontFamily="@font/aladin"
+        android:textSize="35sp"
+        android:textColor="@color/Red"
+        android:onClick="noneedtochange"
+        android:layout_marginRight="40dp"/>
+
+</LinearLayout>

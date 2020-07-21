@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/CadetBlue"
+    tools:context=".Appsdashboard">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarappsdashboard"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/lime"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:onClick="appsdashboardback"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Apps Usage Stats"
+                android:textColor="@color/Black"
+                android:fontFamily="@font/aladin"
+                android:textSize="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/barchart"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="50dp"
+                android:background="@drawable/iconbackgrnd"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/apsinsapps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/installed_apps_icon_2" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="Installed Apps"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="50dp"
+                android:background="@drawable/iconbackgrnd"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/apsrectusdapps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/set_limits_icon_2" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="Recently Used Apps"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        >
+        <!--<LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:elevation="50dp"
+                android:background="@drawable/iconbackgrnd"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/apsappsusgsts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imgwhite" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="Apps Usage Stats"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"/>
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_gravity="center"
+                android:elevation="50dp"
+                android:background="@drawable/iconbackgrnd"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/apssetlim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/recent_apps_icon_2" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="App Usage Stats"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="140dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
