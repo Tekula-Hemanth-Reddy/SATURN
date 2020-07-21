@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_apps"
+            android:icon="@drawable/ic_apps"
+            android:title="Apps" />
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/ic_assignment"
+            android:title="Tasks" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Diary">
+            <menu>
+                <item
+                    android:id="@+id/nav_dairy"
+                    android:icon="@drawable/ic_note_add"
+                    android:title="Dear Diary" />
+                <item
+                    android:id="@+id/nav_view_last_entries"
+                    android:icon="@drawable/ic_book"
+                    android:title="last Entries" />
+
+            </menu>
+
+        </item>
+    </group>
+</menu>
