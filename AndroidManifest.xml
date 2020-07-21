@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.saturn">
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/logobackgrdnill"
+        android:label="SATURN"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SettingsSaturn"></activity>
+        <activity android:name=".diaryaditya.view_diary" />
+        <activity android:name=".diaryaditya.DiaryAdder" />
+        <activity android:name=".diaryaditya.Dateselector" />
+        <activity android:name=".Tasksdashboard" />
+        <activity android:name=".prfacc.EditDetails" />
+        <activity android:name=".prfacc.Profile" />
+        <activity android:name=".About" />
+        <activity android:name=".sctaps.Apps_select" />
+        <activity android:name=".prfacc.Registration" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".prfacc.MainActivity" />
+        <activity
+            android:name=".MainPage"
+            android:label="SATURN" />
+        <activity android:name=".slider.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".prfacc.PassReset" />
+        <activity android:name=".Appsdashboard" />
+        <activity android:name=".appdatainfo.LoadAppsiconsnames" />
+        <activity android:name=".appstatisticdetails.app_used_stats_info" />
+        <activity android:name=".sctaps.App_select_show_data" />
+        <activity android:name=".aditya.DataViewer" />
+        <activity android:name=".aditya.taskadder" />
+        <activity android:name=".aditya.taskviewer" />
+        <receiver android:name=".sercofapp.MyDiaryService"/>
+        <receiver android:name=".sercofapp.MyAppsService"/>
+        <receiver android:name=".sercofapp.MyTasksService"/>
+        <receiver android:name=".sercofapp.Myallsaturnservices"/>
+    </application>
+
+</manifest>
